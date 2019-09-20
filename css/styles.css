@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.quizz {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Comfortaa', cursive;
+}
+
+.question {
+  font-weight: 700;
+  margin: 3rem auto;
+  max-width: 35rem;
+}
+
+.options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.option {
+  max-width: 32rem;
+  margin: 1rem auto;
+  padding: .5em;
+  border-radius: 3px;
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+
+.option:hover {
+  transform: scale(1.05);
+}
+
+.points {
+  margin: 3rem auto;
+  font-size: 1rem;
+  opacity: .5;
+}
