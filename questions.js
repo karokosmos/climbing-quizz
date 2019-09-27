@@ -46,7 +46,57 @@ const questions = [
   },
   {
     question: 'Mitä tarkoitetaan termillä "on-sight"?',
-    options: ['Spontaania kiipeilyä kiipeilyinspiraation iskiessä', 'Kiipeilyreitin kiipeämistä ensiyrittämällä ilman ennakkotietoja', 'Reitin kiipeämistä pitkällisen tuijottelun jälkeen'],
+    options: ['Spontaania kiipeilyä kiipeilyinspiraation iskiessä', 'Kiipeilyreitin kiipeämistä ensiyrittämällä ilman ennakkotietoja', 'Reitin kiipeämistä pitkällisen pohdiskelun jälkeen'],
     rightAnswer: 1
+  },
+  {
+    question: 'Mikä on probleema?',
+    options: ['Eräänlainen muuvi', 'Sääolosuhteiden tms. aiheuttama este kiipeilylle', 'Boulder-reiteistä käytetty termi, joka kuvaa reitin älyllistä haastetta'],
+    rightAnswer: 2
+  },
+  {
+    question: 'Mitä kiipeilyssä tarkoitetaan projektilla?',
+    options: ['Reittiä, jonka suorittaminen vaatii harjoittelua', 'Reitintekijän tekeillä olevaa reittiä', 'Yleensä ulkomaille sijoittuvaa kiipeilymatkaa'],
+    rightAnswer: 0
+  },
+  {
+    question: 'Red-point on...',
+    options: ['Kiipeilysuoritus, jossa kiipeilijä on harjoitellut reittiä aikaisemmin', 'Tietyntyyppinen reitti', 'Kiipeilyväline, jota käytetään liidauksessa'],
+    rightAnswer: 0
+  },
+  {
+    question: 'Millainen ote on sloupperi?',
+    options: ['Kolmion mallinen ote', 'Pyöreä ote', 'Hyvin pieni ote'],
+    rightAnswer: 1
+  },
+  {
+    question: 'Mitä on spottaus?',
+    options: ['Kiipeilyreittien etsimistä', 'Kiipeilyn havainnointia', 'Boulderoinnisssa käytetty varmistustapa'],
+    rightAnswer: 2
+  },
+  {
+    question: 'Millaista kiipeilyä on sporttikiipeily?',
+    options: ['Pulteilla varustettujen reittien kiipeämistä liidaten', 'Kisakiipeilyä', 'Kiipeilyä, jonka tarkoituksena on kohottaa kuntoa'],
+    rightAnswer: 0
+  },
+  {
+    question: 'Mikä on toppi?',
+    options: ['Usein kiipeilyssäkin käytetty vaatekappale', 'Kohta reitillä, josta kiipeilijä ei pääse etenemään', 'Reitin korkein kohta eli loppu'],
+    rightAnswer: 2
+  },
+  {
+    question: 'Millaista kiipeilyä on trädikiipeily?',
+    options: ['Kiipeilyä, jossa ei käytetä ollenkaan varmistuksia', 'Talvella kiipeilyä', 'Kiipeilyä, jossa reitit varmistetaan asentamalla varmistuksia halkeamiin'],
+    rightAnswer: 2
+  },
+  {
+    question: 'Mikä on släbi?',
+    options: ['Pitkänmallinen ote', 'Kiipeilijästä poispäin kallistuva seinä', 'Kiipeilyssä käytetty köysi'],
+    rightAnswer: 1
+  },
+  {
+    question: 'Hänkki on...',
+    options: ['Kiipielijään päin kallistuva seinä', 'Ote, jossa voi roikkua yhdellä kädellä', 'Köyden kiinnitykseen tarkoitettu pidike'],
+    rightAnswer: 0
   }
 ];
