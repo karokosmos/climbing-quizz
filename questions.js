@@ -35,7 +35,7 @@ const questions = [
     rightAnswer: 0 
   },
   {
-    question: 'Mankkaa eli magnesiumkarbonaattia käytetään...',
+    question: 'Mankkaa käytetään...',
     options: ['Vähentämään hikoilun aiheuttamaa kosteutta käsissä', 'Kiipeilijän lisäravinteena', 'Poistamaan hajuja kiipeilykengistä'],
     rightAnswer: 0 
   },

@@ -8,13 +8,14 @@ const displayQuestionContent = questionNum => {
   });
 }
 
-const updateQuestionContent = _ => {
+const updateQuestionContent = quizz => {
   const nextQuestion = parseInt(quizz.dataset.index) + 1;
   displayQuestionContent(nextQuestion);
   quizz.dataset.index = nextQuestion;
 }
 
 const checkAnswer = answer => {
+  const quizz = document.querySelector('.quizz');
   const currentQuestion = parseInt(quizz.dataset.index);
   const optionsArr = [...document.querySelectorAll('.option')];
   const answerInd = optionsArr.findIndex(option => option === answer);
@@ -29,22 +30,32 @@ const checkAnswer = answer => {
 
   // If last question, end quizz
   currentQuestion === 19
-    ? endQuizz(pointsReceived)
-    : updateQuestionContent();
+    ? endQuizz(pointsReceived, quizz)
+    : updateQuestionContent(quizz);
 }
 
-const endQuizz = pointsReceived => {
+const endQuizz = (pointsReceived, quizz) => {
   const end = document.querySelector('.end');
   const total = end.querySelector('.total');
   const btn = end.querySelector('.btn');
   const totalPoints = pointsReceived.textContent;
+  const level = end.querySelector('.text-small');
+
+  if (totalPoints <= 8){
+    level.textContent = 'Hyvä yritys, mutta harjoittele vielä...';
+  } else if (totalPoints > 8 && totalPoints <= 16) {
+    level.textContent = 'Sinussa on potentiaalia!';
+  } else {
+    level.textContent = 'Olet pro!';
+  }
 
   total.textContent = `Sait ${totalPoints} / 20 pistettä!`;
   end.classList.remove('is-hidden');
 
+  // Start quizz again
   btn.addEventListener('click', e => {
-    pointsReceived.textContent = '0';
-    quizz.dataset.index = '0';
+    pointsReceived.textContent = 0;
+    quizz.dataset.index = 0;
     end.classList.add('is-hidden');
     displayQuestionContent(0);
   });
@@ -53,7 +64,6 @@ const endQuizz = pointsReceived => {
 // Show the first question right away
 displayQuestionContent(0);
 
-const quizz = document.querySelector('.quizz');
 const optionsList = document.querySelector('.options');
 
 optionsList.addEventListener('click', e => {
